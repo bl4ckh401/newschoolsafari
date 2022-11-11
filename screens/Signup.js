@@ -52,7 +52,7 @@ const Signup = ({navigation}) => {
                     <TextInput style={{height:80, width:"90%", padding:10, textAlign:'left'}} placeholder="Your Password" name="password" value={password} onChangeText={text => setPassword(text)}/>
                 </View>
                 <View style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
-                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={()=>{handleEmailSignup(); 
+                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={async ()=>{await handleEmailSignup(); 
                                                                                                                                                                 navigation.navigate("Upcoming Experiences")}}>
                         <View  style={{width:'70%', backgroundColor:'#00AAF8', borderRadius:10, paddingVertical:10, }}>
                             <Text style={{textAlign:'center'}} >Sign Up</Text>
@@ -63,7 +63,7 @@ const Signup = ({navigation}) => {
                             <Text style={{textAlign:'center'}}>Login</Text>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={()=>{googleRegister()}}>
+                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={async ()=>{await googleRegister()}}>
                         <View style={{width:'70%', backgroundColor:'#AAB624', borderRadius:10, paddingVertical:10, }}>
                             <Text style={{textAlign:'center'}}>Sign Up With Google</Text>
                         </View>

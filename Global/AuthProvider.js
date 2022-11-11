@@ -48,7 +48,7 @@ const AuthProvider = ({children}) => {
 
 
   const Logout = async () => {
-    auth.signOut().then(setUser(null)).then(console.log("SUCcESSFULLY LOGGED OUT"))
+    auth.signOut().then(setUser(null)).then(console.log("SUCCESSFULLY LOGGED OUT"))
     
   }
 

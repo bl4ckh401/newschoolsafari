@@ -27,7 +27,7 @@ const Login = ({navigation}) => {
                     <TextInput style={{height:80, width:"90%", padding:10, textAlign:'left'}} placeholder="Your Password" name="password" value={password} onChangeText={text => setPassword(text)}/>
                 </View>
                 <View style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
-                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={()=>{handleEmailLogin(); 
+                    <TouchableOpacity style={{width:'100%', justifyContent:'center', alignItems:'center', flexDirection:'column', marginTop:10}} onPress={async()=>{await handleEmailLogin();
                                                                                                                                                                 navigation.navigate("Upcoming Experiences")}}>
                         <View  style={{width:'70%', backgroundColor:'#00AAF8', borderRadius:10, paddingVertical:10, }}>
                             <Text style={{textAlign:'center'}} >Login</Text>
