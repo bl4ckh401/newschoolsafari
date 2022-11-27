@@ -7,6 +7,7 @@ import Signup from './Signup'
 import Login from './Login'
 import { AuthContext } from '../Global/AuthProvider'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import CreateXP from './CreateXP'
 const Stack = createNativeStackNavigator();
 
 
@@ -23,6 +24,7 @@ const StackNavigator = () => {
           <Stack.Screen name="Upcoming Experiences" component={UpcomingXp} />
           <Stack.Screen name="Event Choice" component={Echoice} />
           <Stack.Screen name="Experience" component={Experience} />
+          <Stack.Screen name="CreateXP" component={CreateXP} />
         </>)
       :
         (<>

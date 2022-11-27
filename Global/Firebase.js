@@ -24,3 +24,4 @@ if(firebase.apps.length===0){
 }
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = firebase.auth(app);
+export const firestore = firebase.firestore(app)

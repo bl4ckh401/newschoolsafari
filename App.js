@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context'
 import AuthProvider, { AuthContext } from './Global/AuthProvider';
 import StackNavigator from './screens/StackNavigator';
+import ExperienceProvider, { ExperienceContext } from './Global/ExperienceProvider';
 
 export default function App() {
 
@@ -11,7 +12,9 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <AuthProvider>
-        <StackNavigator/>
+          <ExperienceProvider>
+            <StackNavigator/>
+          </ExperienceProvider>
         </AuthProvider>
       </NavigationContainer>
     </SafeAreaProvider>
