@@ -37,7 +37,7 @@ const ExperienceProvider = ({children}) =>{
             .get().then(collectionSnapshot => {
                 collectionSnapshot.forEach(
                     documentSnapshot => {
-                        setData(...prevState, documentSnapshot.data())
+                        setData(...data, documentSnapshot.data())
                     }
                 )
             })
