@@ -7,12 +7,12 @@ import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDM61UPAamjhlmWosElwpHeqx8R9KN_Iao",
-  authDomain: "schoolsafari-254ke.firebaseapp.com",
-  projectId: "schoolsafari-254ke",
-  storageBucket: "schoolsafari-254ke.appspot.com",
-  messagingSenderId: "371871736058",
-  appId: "1:371871736058:web:6cab9eb19281f96560a943"
+  apiKey: "******************************",
+  authDomain: "**************************",
+  projectId: "*******************************",
+  storageBucket: "******************************",
+  messagingSenderId: "***************************",
+  appId: "************************************"
 };
 
 // Initialize Firebase
