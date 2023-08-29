@@ -16,7 +16,7 @@
     "@react-navigation/native-stack": "^6.9.0",
     "@rneui/base": "^4.0.0-rc.6",
     "@rneui/themed": "^4.0.0-rc.6",
-    "expo": "~49.0.7",
+    "expo": "~49.0.8",
     "expo-auth-session": "~5.0.2",
     "expo-image-picker": "~14.3.2",
     "expo-random": "~12.3.0",
